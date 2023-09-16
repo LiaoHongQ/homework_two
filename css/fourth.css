@@ -1,0 +1,45 @@
+/*
+* @Author: name
+* @Date:   2023-09-15 22:50:37
+* @Last Modified by:   name
+* @Last Modified time: 2023-09-15 23:32:54
+*/
+*{
+    margin:0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    transition:background .3s;
+}
+.all{
+    position: absolute;
+    width: 100%;
+    height: 700px;
+    background-color:blue;
+    color: red;
+}
+.all:hover{
+    background: rgba(69,60,244,.3);
+}
+.all .child{
+    position: absolute;
+    width: 25%;
+    height:70%;
+    margin-top: 8%;
+    background:rgba(116,78,235,.9);
+}
+.all .child:hover{
+    background:rgba(116,78,235,.5);
+}
+.all .descendant{
+    position:absolute;
+    width:80%;
+    height:70%;
+    margin-top:8%;
+    margin-left: 25%;
+    background-color:deepskyblue;
+    padding-left: 10px;
+}
+.all .descendant:hover{
+    background:rgba(5,160,226,.9);
+}

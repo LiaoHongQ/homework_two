@@ -1,0 +1,52 @@
+/*
+* @Author: name
+* @Date:   2023-09-15 23:18:29
+* @Last Modified by:   name
+* @Last Modified time: 2023-09-15 23:51:15
+*/
+*{
+    margin:0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    transition:background .3s;
+    color:red;
+}
+.all{
+    position: absolute;
+    width: 100%;
+    height: 800px;
+    background-color: navy;
+}
+.all .child_1{
+    width: 100%;
+    height:15%;
+    margin-top:5%;
+    background-color:blue;
+}
+.all .child_1:hover{
+    background: rgba(69,60,244,.3);
+}
+.all .child_2{
+    position: relative;
+    width: 100%;
+    height:45%;
+    background-color:deepskyblue;
+    z-index: 9;
+}
+.all .child_2:after{
+    content: "我的名字叫child_socend,我还有个孩子，就是白色那块";
+}
+.all .child_2:hover{
+    background:rgba(5,160,226,.9);
+}
+.all .child_2 .descendant{
+    position: absolute;
+    width:35%;
+    height:100%;
+    margin-left:33%;
+    background-color:#fff;
+}
+.all .child_2 .descendant:hover{
+    background-color:rgba(0,0,0,.2);
+}
