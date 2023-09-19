@@ -1,0 +1,45 @@
+/*
+* @Author: name
+* @Date:   2023-09-15 22:50:37
+* @Last Modified by:   name
+* @Last Modified time: 2023-09-19 13:32:11
+*/
+*{
+    margin:0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;/* 以上为初始化页面，个人习惯 */
+    transition:background .3s; /* 更改所有动画背景滑动时间 */
+}
+.all{
+    position: absolute;/* 绝对定位 */
+    width: 100%;
+    height: 700px;
+    background-color:blue;
+    color: red;
+}
+.all:hover{
+    background: rgba(69,60,244,.3);
+}
+.all .child{
+    position: absolute;
+    width: 25%;
+    height:70%;
+    margin-top: 8%;
+    background:rgba(116,78,235,.9);
+}
+.all .child:hover{
+    background:rgba(116,78,235,.5);
+}
+.all .descendant{
+    position:absolute;
+    width:80%;
+    height:70%;
+    margin-top:8%;
+    margin-left: 25%;
+    background-color:deepskyblue;
+    padding-left: 10px;
+}
+.all .descendant:hover{
+    background:rgba(5,160,226,.9);
+}

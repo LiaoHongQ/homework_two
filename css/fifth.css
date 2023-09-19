@@ -1,0 +1,51 @@
+/*
+* @Author: name
+* @Date:   2023-09-15 23:18:29
+* @Last Modified by:   name
+* @Last Modified time: 2023-09-19 13:33:38
+*/
+*{
+    margin:0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    transition:background .3s;/* 更改背景变化时间 */
+}
+.all{
+    position: absolute;/* 绝对定位 */
+    width: 100%;/* 宽：自适应 */
+    height: 800px;/* 高：800像素 */
+    background-color: navy;/* 背景颜色：深蓝 */
+}
+.all .child_1{
+    width: 100%;
+    height:15%;
+    margin-top:5%;/* 上外边距 */
+    background-color:blue;
+}
+.all .child_1:hover{/* 伪元素：鼠标滑过变化 */
+    background: rgba(69,60,244,.3);
+}
+.all .child_2{
+    position: relative;/* 相对定位 */
+    width: 100%;
+    height:45%;
+    background-color:deepskyblue;
+    z-index: 9;/* 图层显示级别：9可以是任意值最低：0 */
+}
+.all .child_2:after{/* 伪元素：该板块后面 */
+    content: "我的名字叫child_socend,我还有个孩子，就是白色那块";/* 内容显示 */
+}
+.all .child_2:hover{
+    background:rgba(5,160,226,.9);
+}
+.all .child_2 .descendant{
+    position: absolute;
+    width:35%;
+    height:100%;
+    margin-left:33%;
+    background-color:#fff;
+}
+.all .child_2 .descendant:hover{
+    background-color:rgba(0,0,0,.2);
+}

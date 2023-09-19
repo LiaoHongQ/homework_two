@@ -1,0 +1,25 @@
+/*
+* @Author: name
+* @Date:   2023-09-15 22:46:35
+* @Last Modified by:   name
+* @Last Modified time: 2023-09-15 23:59:45
+*/
+*{
+    margin:0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    background-color:deepskyblue;
+    transition:background .3s;
+}
+.all:hover{
+    background:rgba(5,160,226,.9);
+}
+.child{
+    width: 200px;
+    height: 1000px;
+    background:rgba(116,78,235,.5);/* 当鼠标放到背景板上时变换颜色 */
+}
+.child:hover{
+    background:rgba(116,78,235,.9);
+}

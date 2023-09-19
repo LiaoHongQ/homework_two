@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>HongQ的第二次作业</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+<div class="page">
+    <ul>
+      <p style="margin-left:-30%;"><span style="color:red;">单击</span>以下按钮<br>可在本界面查看作业<br>加载稍慢，请耐心等待哦~</p><!-- 段落标签 -->
+      <li onclick="changePage('page/one.html')">作业一<a href="page/one.html" target="_blank" title="">go to 新页面</a></li><!-- 创建列表标签——这里利用onclick属性连接相应的文件，以便用脚本更改下面iframe的src属性 -->
+      <li onclick="changePage('page/two.html')">作业二<a href="page/two.html" target="_blank" title="">go to 新页面</a></li>
+      <li onclick="changePage('page/three.html')">作业三<a href="page/three.html" target="_blank" title="">go to 新页面</a></li>
+      <li onclick="changePage('page/four.html')">作业四<a href="page/four.html" target="_blank" title="">go to 新页面</a></li>
+      <li onclick="changePage('page/five.html')">作业五<a href="page/five.html" target="_blank" title="">go to 新页面</a></li>
+    </ul>
+    <div class="all">
+        <div class="in_border">
+            <iframe id="pageContent" src="page/one.html" width="850" height="650"></iframe><!-- 建立框架 -->
+        </div>
+</div>
+</div>
+<script>/*脚本开始*/
+  function changePage(pageUrl){/*对框架内的页面选择*/
+    document.getElementById("pageContent").src = pageUrl;/*获取id为pageContent的目标 用onclick点击时通过JavaScript修改iframe的src属性*/
+  }
+</script>
+</body>
+</html>
